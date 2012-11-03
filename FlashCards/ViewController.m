@@ -32,7 +32,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)nextCard:(id)sender {
+- (IBAction)nextCard:(id)sender
+{
     self.currentIndex = self.currentIndex + 1;
     if(self.currentIndex == [self.array count])
         self.currentIndex = 0;
