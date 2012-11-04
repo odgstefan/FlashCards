@@ -21,6 +21,8 @@
 		A0B4B26B1645231A001052A0 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B4B2691645231A001052A0 /* ViewController_iPad.xib */; };
 		A0B4B2821645427E001052A0 /* FlashCardsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0B4B2811645427E001052A0 /* FlashCardsList.plist */; };
 		A0B4B285164547F7001052A0 /* FlashCardsList2.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0B4B284164547F7001052A0 /* FlashCardsList2.plist */; };
+		A0B4B28E1646D5EA001052A0 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B4B28C1646D5EA001052A0 /* SettingsViewController.m */; };
+		A0B4B28F1646D5EA001052A0 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B4B28D1646D5EA001052A0 /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,9 @@
 		A0B4B26A1645231A001052A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		A0B4B2811645427E001052A0 /* FlashCardsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FlashCardsList.plist; sourceTree = "<group>"; };
 		A0B4B284164547F7001052A0 /* FlashCardsList2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FlashCardsList2.plist; sourceTree = "<group>"; };
+		A0B4B28B1646D5EA001052A0 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		A0B4B28C1646D5EA001052A0 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		A0B4B28D1646D5EA001052A0 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,9 @@
 				A0B4B2521645231A001052A0 /* Supporting Files */,
 				A0B4B2811645427E001052A0 /* FlashCardsList.plist */,
 				A0B4B284164547F7001052A0 /* FlashCardsList2.plist */,
+				A0B4B28B1646D5EA001052A0 /* SettingsViewController.h */,
+				A0B4B28C1646D5EA001052A0 /* SettingsViewController.m */,
+				A0B4B28D1646D5EA001052A0 /* SettingsViewController.xib */,
 			);
 			path = FlashCards;
 			sourceTree = "<group>";
@@ -175,6 +183,7 @@
 				A0B4B26B1645231A001052A0 /* ViewController_iPad.xib in Resources */,
 				A0B4B2821645427E001052A0 /* FlashCardsList.plist in Resources */,
 				A0B4B285164547F7001052A0 /* FlashCardsList2.plist in Resources */,
+				A0B4B28F1646D5EA001052A0 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +197,7 @@
 				A0B4B2581645231A001052A0 /* main.m in Sources */,
 				A0B4B25C1645231A001052A0 /* AppDelegate.m in Sources */,
 				A0B4B2651645231A001052A0 /* ViewController.m in Sources */,
+				A0B4B28E1646D5EA001052A0 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

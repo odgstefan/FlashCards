@@ -21,5 +21,6 @@
 
 - (IBAction)changeText:(id)sender;
     
+- (IBAction)addText:(id)sender;
 
 @end
