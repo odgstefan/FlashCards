@@ -19,8 +19,14 @@
     [super viewDidLoad];
 
 	// Do any additional setup after loading the view, typically from a nib.
-    self.array = [[NSArray alloc] initWithObjects: @"mar", @"minge",@"floare",@"copil",@"cos",@"masina",@"motor",@"roata",@"ceas",@"masa", nil];
-    self.array1 = [[NSArray alloc] initWithObjects:@"apple",@"ball",@"flower",@"child",@"basket",@"car",@"engine",@"wheel",@"clock",@"table", nil];
+  //self.array = [[NSArray alloc] initWithObjects: @"mar", @"minge",@"floare",@"copil",@"cos",@"masina",@"motor",@"roata",@"ceas",@"masa", nil];
+  //self.array1 = [[NSArray alloc] initWithObjects:@"apple",@"ball",@"flower",@"child",@"basket",@"car",@"engine",@"wheel",@"clock",@"table", nil];
+    
+  NSString *path = [[NSBundle mainBundle] pathForResource:@"FlashCardsList" ofType:@"plist"];
+  self.array = [[NSArray alloc] initWithContentsOfFile:path];
+  NSString *path2 = [[NSBundle mainBundle] pathForResource:@"FlashCardsList2" ofType:@"plist"];
+  self.array1 = [[NSArray alloc] initWithContentsOfFile:path2];
+    
     self.currentIndex = -1;
     self.esteFata = YES;
 }
@@ -37,12 +43,27 @@
     self.currentIndex = self.currentIndex + 1;
     if(self.currentIndex == [self.array count])
         self.currentIndex = 0;
+    
     NSString* str = [self.array objectAtIndex:self.currentIndex];
     [self.card setTitle:str forState:UIControlStateNormal];
     
     self.esteFata = NO;
 
 }
+
+- (IBAction)previousCard:(id)sender
+{
+    self.currentIndex = self.currentIndex - 1;    
+    if(self.currentIndex < 0)
+     self.currentIndex = [self.array count] - 1;
+    
+    NSString* strn = [self.array objectAtIndex:self.currentIndex];
+    [self.card setTitle:strn forState:UIControlStateNormal];
+    
+    
+}
+
+
 
 - (IBAction)changeText:(id)sender {
     if(self.currentIndex == -1)
@@ -56,4 +77,8 @@
     [self.card setTitle:string forState:UIControlStateNormal];
     
 }
+
+
+
+
 @end

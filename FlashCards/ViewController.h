@@ -16,6 +16,10 @@
 @property bool esteFata;
 - (IBAction)nextCard:(id)sender;
 
+
+- (IBAction)previousCard:(id)sender;
+
 - (IBAction)changeText:(id)sender;
     
+
 @end
